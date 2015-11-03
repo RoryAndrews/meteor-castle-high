@@ -27,3 +27,20 @@ Router.route('/stuff/:_id', {
   name: 'EditStuff',
   data: function() { return Stuff.findOne(this.params._id); }
 });
+
+
+Router.route('/studentsparents/', {
+  name: 'StudentsParents'
+});
+
+Router.route('/facultystaff/', {
+  name: 'FacultyStaff'
+})
+
+Router.route('/alumnifriends/', {
+  name: 'AlumniFriends'
+});
+
+Router.route('/contactus/', {
+  name: 'ContactUs'
+});
